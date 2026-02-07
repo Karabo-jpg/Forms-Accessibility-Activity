@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -130,21 +131,9 @@
             color: #666;
             margin-top: 5px;
         }
-
-        /* Role attribution footer */
-        .role-attribution {
-            margin-top: 30px;
-            padding-top: 20px;
-            border-top: 1px solid #e0e0e0;
-            font-size: 12px;
-            color: #999;
-        }
-
-        .role-attribution p {
-            margin-bottom: 5px;
-        }
     </style>
 </head>
+
 <body>
     <div class="form-container">
         <h1>Create Your Account</h1>
@@ -156,43 +145,28 @@
             ACCESSIBILITY LEAD: Add ARIA attributes (role="form", aria-describedby, aria-label)
         -->
         <form id="registrationForm" method="post" action="#">
-            
+
             <!-- Full Name Field -->
             <div class="form-group">
                 <label for="fullName">Full Name</label>
-                <input 
-                    type="text" 
-                    id="fullName" 
-                    name="fullName"
-                    placeholder="Enter your full name"
-                >
+                <input type="text" id="fullName" name="fullName" placeholder="Enter your full name">
                 <!-- VALIDATION LEAD: Add 'required' attribute -->
             </div>
 
             <!-- Email Address Field -->
             <div class="form-group">
                 <label for="email">Email Address</label>
-                <input 
-                    type="email" 
-                    id="email" 
-                    name="email"
-                    placeholder="example@email.com"
-                >
+                <input type="email" id="email" name="email" placeholder="example@email.com">
                 <!-- VALIDATION LEAD: Add 'required' attribute and ensure type="email" is present -->
             </div>
 
             <!-- Password Field -->
             <div class="form-group">
                 <label for="password">Password</label>
-                <input 
-                    type="password" 
-                    id="password" 
-                    name="password"
-                    placeholder="Create a strong password"
-                >
+                <input type="password" id="password" name="password" placeholder="Create a strong password">
                 <!-- VALIDATION LEAD: Add 'required', 'minlength="8"', and 'pattern' attributes -->
                 <!-- ACCESSIBILITY LEAD: Add 'aria-describedby="passwordRequirements"' -->
-                
+
                 <p class="password-hint" id="passwordRequirements">
                     Password must be at least 8 characters long, contain at least one uppercase letter and one number.
                 </p>
@@ -201,14 +175,10 @@
 
             <!-- Terms & Conditions Checkbox -->
             <div class="checkbox-group">
-                <input 
-                    type="checkbox" 
-                    id="terms" 
-                    name="terms"
-                >
+                <input type="checkbox" id="terms" name="terms">
                 <!-- VALIDATION LEAD: Add 'required' attribute -->
                 <!-- ACCESSIBILITY LEAD: Add appropriate ARIA label -->
-                
+
                 <label for="terms" class="checkbox-label">
                     I agree to the <a href="#" target="_blank">Terms and Conditions</a>
                 </label>
@@ -218,30 +188,24 @@
             <button type="submit">Register</button>
         </form>
 
-        <!-- Role Attribution -->
-        <div class="role-attribution">
-            <p><strong>Role Contributions:</strong></p>
-            <p>✓ Form Structure Lead: Base HTML structure and semantic layout</p>
-            <p>⏳ Validation Lead: HTML validation attributes</p>
-            <p>⏳ Accessibility Lead: ARIA attributes and screen reader support</p>
-            <p>✓ Integration & Review Lead: Quality assurance and final testing</p>
-        </div>
+
     </div>
 
     <script>
         // Basic form submission handler for testing
-        document.getElementById('registrationForm').addEventListener('submit', function(event) {
+        document.getElementById('registrationForm').addEventListener('submit', function (event) {
             event.preventDefault();
-            
+
             // This will show which validation/ARIA features are working
             const formData = new FormData(this);
             console.log('Form submitted with data:');
             for (let [key, value] of formData.entries()) {
                 console.log(`${key}: ${value}`);
             }
-            
+
             alert('Form submitted successfully! Check console for details.');
         });
     </script>
 </body>
+
 </html>
