@@ -136,55 +136,34 @@
 
 <body>
     <div class="form-container">
-        <h1>Create Your Account</h1>
-        <p class="form-description">Fill out the form below to register for an account.</p>
+        <h1 id="formTitle">Create Your Account</h1>
+        <p class="form-description" id="formDescription">Fill out the form below to register for an account.</p>
 
-        <!-- 
-            FORM STRUCTURE LEAD: Form structure created ✓
-            VALIDATION LEAD: Add validation attributes (required, pattern, minlength, type specifications)
-            ACCESSIBILITY LEAD: Add ARIA attributes (role="form", aria-describedby, aria-label)
-        -->
-        <form id="registrationForm" method="post" action="#">
+
+        <form id="registrationForm" method="post" action="#" role="form" aria-labelledby="formTitle"
+            aria-describedby="formDescription">
 
             <!-- Full Name Field -->
             <div class="form-group">
                 <label for="fullName">Full Name</label>
-                <input 
-                    type="text" 
-                    id="fullName" 
-                    name="fullName" 
-                    placeholder="Enter your full name"
-                    required
-                >
-                <!-- VALIDATION LEAD: 'required' attribute added -->
+                <input type="text" id="fullName" name="fullName" placeholder="Enter your full name" required>
+
             </div>
 
             <!-- Email Address Field -->
             <div class="form-group">
                 <label for="email">Email Address</label>
-                <input 
-                    type="email" 
-                    id="email" 
-                    name="email" 
-                    placeholder="example@email.com"
-                    required
-                >
-                <!-- VALIDATION LEAD: 'required' attribute added and type="email" preserved -->
+                <input type="email" id="email" name="email" placeholder="example@email.com" required>
+
             </div>
 
             <!-- Password Field -->
             <div class="form-group">
                 <label for="password">Password</label>
-                <input 
-                    type="password" 
-                    id="password" 
-                    name="password" 
-                    placeholder="Create a strong password"
-                    required
-                    minlength="8"
-                    pattern="^(?=.*[A-Z])(?=.*\d).{8,}$"
+                <input type="password" id="password" name="password" placeholder="Create a strong password" required
+                    minlength="8" pattern="^(?=.*[A-Z])(?=.*\d).{8,}$"
                     title="Password must be at least 8 characters long and include at least one uppercase letter and one number."
-                >
+                    aria-describedby="passwordRequirements">
                 <!-- 
                     VALIDATION LEAD: 
                     - required → prevents empty submission
@@ -196,22 +175,17 @@
                 <p class="password-hint" id="passwordRequirements">
                     Password must be at least 8 characters long, contain at least one uppercase letter and one number.
                 </p>
-                <!-- ACCESSIBILITY LEAD: Ensure this hint is properly linked via aria-describedby -->
+
             </div>
 
             <!-- Terms & Conditions Checkbox -->
             <div class="checkbox-group">
-                <input 
-                    type="checkbox" 
-                    id="terms" 
-                    name="terms"
-                    required
-                >
-                <!-- VALIDATION LEAD: 'required' attribute added -->
-                <!-- ACCESSIBILITY LEAD: Add appropriate ARIA label -->
+                <input type="checkbox" id="terms" name="terms" required>
 
-                <label for="terms" class="checkbox-label">
-                    I agree to the <a href="#" target="_blank">Terms and Conditions</a>
+
+                <label for="terms" class="checkbox-label" id="termsLabel">
+                    I agree to the <a href="#" target="_blank"
+                        aria-label="Terms and Conditions (opens in a new tab)">Terms and Conditions</a>
                 </label>
             </div>
 

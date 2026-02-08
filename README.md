@@ -1,4 +1,11 @@
 # HTML Forms and Accessibility - Group Assignment
+ 
+ ## 👥 Team Members
+ - **Karabo:** Form Structure, Integration & Review Lead
+ - **Tabitha:** Accessibility Lead  
+ - **Jesse:** Validation Lead
+ 
+ 📄 **Project Document:** [View on Google Docs](https://docs.google.com/document/d/1SSl3TcDxONOnHX-UwbP5Ci-WWE0GRVjpKD6zqT_MKsE/edit?usp=sharing)
 
 ## 📋 Project Overview
 This is a collaborative group assignment where we create an accessible HTML registration form with proper validation and ARIA attributes.
@@ -27,8 +34,8 @@ This is a collaborative group assignment where we create an accessible HTML regi
 - Testing browser validation behavior
 
 **Status:** ✅ **COMPLETED**
-
-### ⏳ Role 3: Accessibility (ARIA) Lead (Pending)
+ 
+### ✅ Role 3: Accessibility (ARIA) Lead (Completed)
 **Responsible for:**
 - Adding appropriate ARIA attributes:
   - `aria-label`
@@ -39,16 +46,16 @@ This is a collaborative group assignment where we create an accessible HTML regi
   - Checkbox has an accessible label
   - `<form>` includes `role="form"`
 - Verifying accessibility with an accessibility checker
-
-**Status:** ⏳ **AWAITING TEAMMATE CONTRIBUTION**
-
-### ✅ Role 4: Integration & Review Lead (Completed)
+ 
+**Status:** ✅ **COMPLETED**
+ 
+ ### ✅ Role 4: Integration & Review Lead (Completed)
 **Responsible for:**
 - Reviewing the full form for consistency
 - Ensuring all roles' work is properly integrated
 - Leading final testing and cleanup
-
-**Status:** ✅ **IN PROGRESS** - Will finalize after all team contributions
+ 
+**Status:** ✅ **COMPLETED**
 
 ---
 
@@ -182,23 +189,23 @@ HTML Forms and Accessibility/
 - [x] Terms and Conditions (checkbox)
 - [x] Submit button
 
-### Step 2: Add Built-in Validation ⏳
-- [ ] Require all fields to be filled
-- [ ] Enforce valid email format
-- [ ] Password minimum length (8 characters)
-- [ ] Password pattern (uppercase + number)
-
-### Step 3: Enhance with ARIA ⏳
-- [ ] ARIA attributes for context
-- [ ] ARIA description for password requirements
-- [ ] Accessible checkbox labeling
-- [ ] `role="form"` on form element
-
-### Step 4: Test the Form ⏳
-- [ ] Empty field submission
-- [ ] Invalid email
-- [ ] Weak password
-- [ ] ARIA descriptions with assistive tech
+### Step 2: Add Built-in Validation ✅
+ - [x] Require all fields to be filled
+ - [x] Enforce valid email format
+ - [x] Password minimum length (8 characters)
+ - [x] Password pattern (uppercase + number)
+ 
+ ### Step 3: Enhance with ARIA ✅
+ - [x] ARIA attributes for context
+ - [x] ARIA description for password requirements
+ - [x] Accessible checkbox labeling
+ - [x] `role="form"` on form element
+ 
+ ### Step 4: Test the Form ✅
+ - [x] Empty field submission
+ - [x] Invalid email
+ - [x] Weak password
+ - [x] ARIA descriptions with assistive tech
 
 ---
 
