@@ -26,7 +26,7 @@ This is a collaborative group assignment where we create an accessible HTML regi
   - `pattern` for password strength
 - Testing browser validation behavior
 
-**Status:** ⏳ **AWAITING TEAMMATE CONTRIBUTION**
+**Status:** ✅ **COMPLETED**
 
 ### ⏳ Role 3: Accessibility (ARIA) Lead (Pending)
 **Responsible for:**
