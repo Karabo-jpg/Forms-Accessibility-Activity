@@ -5,10 +5,10 @@
  - **Tabitha:** Accessibility Lead  
  - **Jesse:** Validation Lead
  
- 📄 **Project Document:** [View on Google Docs](https://docs.google.com/document/d/1SSl3TcDxONOnHX-UwbP5Ci-WWE0GRVjpKD6zqT_MKsE/edit?usp=sharing)
+📄 **Project Document:** [View on Google Docs](https://docs.google.com/document/d/1GooSfeqiM5WtWPEwy810JZioUfCqKjCV_TSOJwx0UBc/edit?usp=sharing)
 
 ## 📋 Project Overview
-This is a collaborative group assignment where we create an accessible HTML registration form with proper validation and ARIA attributes.
+This is a collaborative group assignment where we created an accessible HTML registration form with proper validation and ARIA attributes.
 
 ## 👥 Group Roles & Responsibilities
 
